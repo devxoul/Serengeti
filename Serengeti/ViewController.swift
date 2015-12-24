@@ -31,8 +31,15 @@ class ViewController: UIViewController {
     }
 
     @IBAction func addressInputDidReturn() {
+        guard var URLString = self.addressInput.text else {
+            return
+        }
         self.addressInput.resignFirstResponder()
-        if let text = self.addressInput.text, URL = NSURL(string: text) {
+
+        if !URLString.hasPrefix("http://") && !URLString.hasPrefix("https://") {
+            URLString = "http://" + URLString
+        }
+        if let URL = NSURL(string: URLString) {
             let request = NSURLRequest(URL: URL)
             self.webView.loadRequest(request)
         }
