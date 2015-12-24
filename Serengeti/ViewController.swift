@@ -15,6 +15,9 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        self.webView.scrollView.contentInset.bottom = self.toolbar.frame.size.height
+
         if let URL = NSURL(string: "http://xoul.kr") {
             let request = NSURLRequest(URL: URL)
             self.webView.loadRequest(request)
