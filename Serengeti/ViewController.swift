@@ -68,7 +68,7 @@ extension ViewController: UIWebViewDelegate {
     func webView(webView: UIWebView,
                  shouldStartLoadWithRequest request: NSURLRequest,
                  navigationType: UIWebViewNavigationType) -> Bool {
-        self.addressInput.text = request.URL?.absoluteString
+        self.addressInput.text = request.mainDocumentURL?.absoluteString
         return true
     }
 
