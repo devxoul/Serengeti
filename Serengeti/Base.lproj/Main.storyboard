@@ -59,6 +59,7 @@
                         </textField>
                     </navigationItem>
                     <connections>
+                        <outlet property="addressInput" destination="ahc-2F-EeT" id="szx-dg-Dom"/>
                         <outlet property="toolbar" destination="PDF-Zi-Lyz" id="ePw-fI-0eS"/>
                         <outlet property="webView" destination="98z-YT-dpg" id="cky-sf-Wai"/>
                     </connections>
