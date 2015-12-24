@@ -42,6 +42,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Blj-Ae-HyI"/>
                     <connections>
+                        <outlet property="toolbar" destination="PDF-Zi-Lyz" id="ePw-fI-0eS"/>
                         <outlet property="webView" destination="98z-YT-dpg" id="cky-sf-Wai"/>
                     </connections>
                 </viewController>
