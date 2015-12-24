@@ -29,6 +29,13 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func backButtonDidTap() {
+        NSLog("뒤로")
+    }
+
+    @IBAction func forwardButtonDidTap() {
+        NSLog("앞으로")
+    }
 
 }
 
