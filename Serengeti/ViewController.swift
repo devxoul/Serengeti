@@ -74,4 +74,9 @@ extension ViewController: UIWebViewDelegate {
         return true
     }
 
+    func webViewDidFinishLoad(webView: UIWebView) {
+        self.backButton.enabled = webView.canGoBack
+        self.forwardButton.enabled = webView.canGoForward
+    }
+
 }
