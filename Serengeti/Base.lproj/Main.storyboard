@@ -77,6 +77,7 @@
                         <outlet property="addressInput" destination="ahc-2F-EeT" id="szx-dg-Dom"/>
                         <outlet property="backButton" destination="iEm-AB-e7M" id="v5Y-BS-dfw"/>
                         <outlet property="forwardButton" destination="ZFb-pP-UUh" id="QYq-qb-Ucx"/>
+                        <outlet property="refreshButton" destination="Dtb-Wo-bIf" id="PK6-zj-2bN"/>
                         <outlet property="toolbar" destination="PDF-Zi-Lyz" id="ePw-fI-0eS"/>
                         <outlet property="webView" destination="98z-YT-dpg" id="cky-sf-Wai"/>
                     </connections>
