@@ -46,7 +46,11 @@
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="IHh-cY-cWd"/>
-                                    <barButtonItem systemItem="bookmarks" id="ZnE-Ug-BWs"/>
+                                    <barButtonItem systemItem="bookmarks" id="ZnE-Ug-BWs">
+                                        <connections>
+                                            <action selector="bookmarkButtonDidTap" destination="BYZ-38-t0r" id="tlg-eU-aQ7"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                         </subviews>
