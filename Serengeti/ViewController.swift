@@ -30,6 +30,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         self.webView.scrollView.contentInset.bottom = self.toolbar.frame.size.height
+        self.webView.scrollView.keyboardDismissMode = .OnDrag
 
         if let URL = NSURL(string: "http://xoul.kr") {
             let request = NSURLRequest(URL: URL)
