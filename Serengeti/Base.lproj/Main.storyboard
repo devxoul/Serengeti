@@ -56,6 +56,9 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <action selector="addressInputDidReturn" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="dw3-r0-0Qo"/>
+                            </connections>
                         </textField>
                     </navigationItem>
                     <connections>
