@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet var webView: UIWebView!
+    @IBOutlet var toolbar: UIToolbar!
 
     override func viewDidLoad() {
         super.viewDidLoad()
