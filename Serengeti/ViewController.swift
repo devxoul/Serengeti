@@ -39,10 +39,15 @@ class ViewController: UIViewController {
         if !URLString.hasPrefix("http://") && !URLString.hasPrefix("https://") {
             URLString = "http://" + URLString
         }
-        if let URL = NSURL(string: URLString) {
-            let request = NSURLRequest(URL: URL)
-            self.webView.loadRequest(request)
+        guard let URL = NSURL(string: URLString) else {
+            let alert = UIAlertController(title: "앗!", message: "잘못된 형식의 URL입니다.", preferredStyle: .Alert)
+            let action = UIAlertAction(title: "죄송", style: .Cancel, handler: nil)
+            alert.addAction(action)
+            self.presentViewController(alert, animated: true, completion: nil)
+            return
         }
+        let request = NSURLRequest(URL: URL)
+        self.webView.loadRequest(request)
     }
 
     @IBAction func backButtonDidTap() {
