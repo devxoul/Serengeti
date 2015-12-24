@@ -8,6 +8,8 @@
 
 import UIKit
 
+let SerengetiHomeURL = "SerengetiHomeURL"
+
 class ViewController: UIViewController {
 
     @IBOutlet var webView: UIWebView!
