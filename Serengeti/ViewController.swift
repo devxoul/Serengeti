@@ -34,7 +34,9 @@ class ViewController: UIViewController {
         self.webView.scrollView.contentInset.bottom = self.toolbar.frame.size.height
         self.webView.scrollView.keyboardDismissMode = .OnDrag
 
-        if let URL = NSURL(string: "http://xoul.kr") {
+        let homeURLString = NSUserDefaults.standardUserDefaults().objectForKey(SerengetiHomeURL) as? String
+        let URLString = homeURLString ?? "http://xoul.kr"
+        if let URL = NSURL(string: URLString) {
             let request = NSURLRequest(URL: URL)
             self.webView.loadRequest(request)
         }
