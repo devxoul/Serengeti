@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
                             </webView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PDF-Zi-Lyz">
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PDF-Zi-Lyz">
                                 <rect key="frame" x="0.0" y="556" width="600" height="44"/>
                                 <items>
                                     <barButtonItem title="Item" id="iEm-AB-e7M"/>
@@ -32,9 +32,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="98z-YT-dpg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="0Fg-6f-zPe"/>
+                            <constraint firstItem="PDF-Zi-Lyz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="E96-ED-Q0m"/>
                             <constraint firstAttribute="trailing" secondItem="98z-YT-dpg" secondAttribute="trailing" id="K6r-30-GcI"/>
                             <constraint firstItem="98z-YT-dpg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="OvJ-Wk-xSv"/>
+                            <constraint firstAttribute="trailing" secondItem="PDF-Zi-Lyz" secondAttribute="trailing" id="i3f-71-9D0"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="98z-YT-dpg" secondAttribute="bottom" id="ots-c8-DtW"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="PDF-Zi-Lyz" secondAttribute="bottom" id="qBd-dL-X6U"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Blj-Ae-HyI"/>
