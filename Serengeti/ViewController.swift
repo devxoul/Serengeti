@@ -52,6 +52,10 @@ class ViewController: UIViewController {
         self.webView.loadRequest(request)
     }
 
+    @IBAction func reloadButtonDidTap() {
+        self.webView.reload()
+    }
+
     @IBAction func backButtonDidTap() {
         self.webView.goBack()
     }
