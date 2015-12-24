@@ -75,6 +75,23 @@ class ViewController: UIViewController {
         self.webView.goForward()
     }
 
+    @IBAction func bookmarkButtonDidTap() {
+        guard let URLString = self.webView.request?.mainDocumentURL?.absoluteString else {
+            return
+        }
+        let alert = UIAlertController(
+            title: "홈으로 설정",
+            message: "'\(URLString)' 을 홈으로 설정할까요?",
+            preferredStyle: .Alert
+        )
+        let yes = UIAlertAction(title: "네", style: .Cancel) { _ in
+        }
+        let no = UIAlertAction(title: "아니오", style: .Default, handler: nil)
+        alert.addAction(yes)
+        alert.addAction(no)
+        self.presentViewController(alert, animated: true, completion: nil)
+    }
+
 }
 
 
