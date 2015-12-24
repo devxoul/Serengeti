@@ -25,8 +25,16 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PDF-Zi-Lyz">
                                 <rect key="frame" x="0.0" y="556" width="600" height="44"/>
                                 <items>
-                                    <barButtonItem title="뒤로" id="iEm-AB-e7M"/>
-                                    <barButtonItem title="앞으로" id="ZFb-pP-UUh"/>
+                                    <barButtonItem title="뒤로" id="iEm-AB-e7M">
+                                        <connections>
+                                            <action selector="backButtonDidTap" destination="BYZ-38-t0r" id="LTb-hG-bB0"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="앞으로" id="ZFb-pP-UUh">
+                                        <connections>
+                                            <action selector="forwardButtonDidTap" destination="BYZ-38-t0r" id="k6P-vJ-Y9z"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                         </subviews>
