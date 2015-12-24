@@ -30,11 +30,11 @@ class ViewController: UIViewController {
     }
 
     @IBAction func backButtonDidTap() {
-        NSLog("뒤로")
+        self.webView.goBack()
     }
 
     @IBAction func forwardButtonDidTap() {
-        NSLog("앞으로")
+        self.webView.goForward()
     }
 
 }
