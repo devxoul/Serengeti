@@ -30,6 +30,14 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func addressInputDidReturn() {
+        self.addressInput.resignFirstResponder()
+        if let text = self.addressInput.text, URL = NSURL(string: text) {
+            let request = NSURLRequest(URL: URL)
+            self.webView.loadRequest(request)
+        }
+    }
+
     @IBAction func backButtonDidTap() {
         self.webView.goBack()
     }
