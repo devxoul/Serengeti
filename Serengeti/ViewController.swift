@@ -16,6 +16,15 @@ class ViewController: UIViewController {
     @IBOutlet var backButton: UIBarButtonItem!
     @IBOutlet var forwardButton: UIBarButtonItem!
 
+    let activityIndicatorItem: UIBarButtonItem = {
+        let activityIndicatorView = UIActivityIndicatorView(activityIndicatorStyle: .Gray)
+        activityIndicatorView.startAnimating()
+        return UIBarButtonItem(customView: activityIndicatorView)
+    }()
+    var activityIndicatorView: UIActivityIndicatorView? {
+        return self.activityIndicatorItem.customView as? UIActivityIndicatorView
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
