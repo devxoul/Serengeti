@@ -29,11 +29,13 @@
                                 <rect key="frame" x="0.0" y="556" width="600" height="44"/>
                                 <items>
                                     <barButtonItem systemItem="refresh" id="Dtb-Wo-bIf"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Dsz-La-Gg4"/>
                                     <barButtonItem enabled="NO" title="뒤로" id="iEm-AB-e7M">
                                         <connections>
                                             <action selector="backButtonDidTap" destination="BYZ-38-t0r" id="LTb-hG-bB0"/>
                                         </connections>
                                     </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="gxC-jL-xfY"/>
                                     <barButtonItem enabled="NO" title="앞으로" id="ZFb-pP-UUh">
                                         <connections>
                                             <action selector="forwardButtonDidTap" destination="BYZ-38-t0r" id="k6P-vJ-Y9z"/>
