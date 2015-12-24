@@ -60,3 +60,9 @@ class ViewController: UIViewController {
 
 }
 
+
+// MARK: - UIWebViewDelegate
+
+extension ViewController: UIWebViewDelegate {
+
+}
