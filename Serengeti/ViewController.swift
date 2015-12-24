@@ -13,6 +13,8 @@ class ViewController: UIViewController {
     @IBOutlet var webView: UIWebView!
     @IBOutlet var toolbar: UIToolbar!
     @IBOutlet var addressInput: UITextField!
+    @IBOutlet var backButton: UIBarButtonItem!
+    @IBOutlet var forwardButton: UIBarButtonItem!
 
     override func viewDidLoad() {
         super.viewDidLoad()
