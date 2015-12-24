@@ -114,6 +114,7 @@ extension ViewController: UIWebViewDelegate {
             alert.addAction(action)
             self.presentViewController(alert, animated: true, completion: nil)
         }
+        self.webViewDidFinishLoad(webView)
     }
 
 }
