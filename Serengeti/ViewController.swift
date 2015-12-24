@@ -87,6 +87,8 @@ class ViewController: UIViewController {
             preferredStyle: .Alert
         )
         let yes = UIAlertAction(title: "네", style: .Cancel) { _ in
+            NSUserDefaults.standardUserDefaults().setObject(URLString, forKey: SerengetiHomeURL)
+            NSUserDefaults.standardUserDefaults().synchronize()
         }
         let no = UIAlertAction(title: "아니오", style: .Default, handler: nil)
         alert.addAction(yes)
