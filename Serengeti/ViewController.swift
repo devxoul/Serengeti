@@ -97,6 +97,11 @@ extension ViewController: UIWebViewDelegate {
     }
 
     func webViewDidFinishLoad(webView: UIWebView) {
+        if var items = self.toolbar.items {
+            items.removeFirst()
+            items.insert(self.refreshButton, atIndex: 0)
+            self.toolbar.items = items
+        }
         self.backButton.enabled = webView.canGoBack
         self.forwardButton.enabled = webView.canGoForward
     }
