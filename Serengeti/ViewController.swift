@@ -107,4 +107,13 @@ extension ViewController: UIWebViewDelegate {
         self.forwardButton.enabled = webView.canGoForward
     }
 
+    func webView(webView: UIWebView, didFailLoadWithError error: NSError?) {
+        if let error = error {
+            let alert = UIAlertController(title: "앗!", message: error.localizedDescription, preferredStyle: .Alert)
+            let action = UIAlertAction(title: "네", style: .Cancel, handler: nil)
+            alert.addAction(action)
+            self.presentViewController(alert, animated: true, completion: nil)
+        }
+    }
+
 }
