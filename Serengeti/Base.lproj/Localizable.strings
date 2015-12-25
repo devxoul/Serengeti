@@ -5,3 +5,11 @@
   Created by 전수열 on 12/26/15.
   Copyright © 2015 Suyeol Jeon. All rights reserved.
 */
+
+"oops" = "Oops..!";
+"invalid_url" = "Invalid URL.";
+"im_sorry" = "I'm sorry.";
+"set_home_title" = "Set homepage";
+"set_home_message" = "Make '%@' your homepage?";
+"yes" = "Yes";
+"no" = "No";
