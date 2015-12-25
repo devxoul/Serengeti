@@ -57,8 +57,16 @@ class ViewController: UIViewController {
             URLString = "http://" + URLString
         }
         guard let URL = NSURL(string: URLString) else {
-            let alert = UIAlertController(title: "앗!", message: "잘못된 형식의 URL입니다.", preferredStyle: .Alert)
-            let action = UIAlertAction(title: "죄송", style: .Cancel, handler: nil)
+            let alert = UIAlertController(
+                title: NSLocalizedString("oops", comment: "앗!"),
+                message: NSLocalizedString("invalid_url", comment: "잘못된 형식의 URL입니다."),
+                preferredStyle: .Alert
+            )
+            let action = UIAlertAction(
+                title: NSLocalizedString("im_sorry", comment: "죄송"),
+                style: .Cancel,
+                handler: nil
+            )
             alert.addAction(action)
             self.presentViewController(alert, animated: true, completion: nil)
             return
@@ -84,15 +92,18 @@ class ViewController: UIViewController {
             return
         }
         let alert = UIAlertController(
-            title: "홈으로 설정",
-            message: "'\(URLString)' 을 홈으로 설정할까요?",
+            title: NSLocalizedString("set_home_title", comment: "홈으로 설정"),
+            message: String(
+                format: NSLocalizedString("set_home_message", comment: "'%@' 을 홈으로 설정할까요?"),
+                URLString
+            ),
             preferredStyle: .Alert
         )
-        let yes = UIAlertAction(title: "네", style: .Cancel) { _ in
+        let yes = UIAlertAction(title: NSLocalizedString("yes", comment: "네"), style: .Cancel) { _ in
             NSUserDefaults.standardUserDefaults().setObject(URLString, forKey: SerengetiHomeURL)
             NSUserDefaults.standardUserDefaults().synchronize()
         }
-        let no = UIAlertAction(title: "아니오", style: .Default, handler: nil)
+        let no = UIAlertAction(title: NSLocalizedString("no", comment: "아니오"), style: .Default, handler: nil)
         alert.addAction(yes)
         alert.addAction(no)
         self.presentViewController(alert, animated: true, completion: nil)
@@ -132,8 +143,12 @@ extension ViewController: UIWebViewDelegate {
 
     func webView(webView: UIWebView, didFailLoadWithError error: NSError?) {
         if let error = error {
-            let alert = UIAlertController(title: "앗!", message: error.localizedDescription, preferredStyle: .Alert)
-            let action = UIAlertAction(title: "네", style: .Cancel, handler: nil)
+            let alert = UIAlertController(
+                title: NSLocalizedString("oops", comment: "앗!"),
+                message: error.localizedDescription,
+                preferredStyle: .Alert
+            )
+            let action = UIAlertAction(title: NSLocalizedString("yes", comment: "네"), style: .Cancel, handler: nil)
             alert.addAction(action)
             self.presentViewController(alert, animated: true, completion: nil)
         }
