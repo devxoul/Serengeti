@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  WebViewController.swift
 //  Serengeti
 //
 //  Created by 전수열 on 12/25/15.
@@ -10,7 +10,7 @@ import UIKit
 
 let SerengetiHomeURL = "SerengetiHomeURL"
 
-class ViewController: UIViewController {
+class WebViewController: UIViewController {
 
     @IBOutlet var webView: UIWebView!
     @IBOutlet var toolbar: UIToolbar!
@@ -114,7 +114,7 @@ class ViewController: UIViewController {
 
 // MARK: - UIWebViewDelegate
 
-extension ViewController: UIWebViewDelegate {
+extension WebViewController: UIWebViewDelegate {
 
     func webView(webView: UIWebView,
                  shouldStartLoadWithRequest request: NSURLRequest,
