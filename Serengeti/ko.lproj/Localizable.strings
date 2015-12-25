@@ -5,3 +5,11 @@
   Created by 전수열 on 12/26/15.
   Copyright © 2015 Suyeol Jeon. All rights reserved.
 */
+
+"oops" = "앗!";
+"invalid_url" = "잘못된 형식의 URL입니다.";
+"im_sorry" = "죄송";
+"set_home_title" = "홈으로 설정";
+"set_home_message" = "'%@' 을 홈으로 설정할까요?";
+"yes" = "네";
+"no" = "아니오";
