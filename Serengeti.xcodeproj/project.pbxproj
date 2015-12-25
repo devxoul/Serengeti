@@ -12,7 +12,7 @@
 		0340E6211C2C6AB200020202 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0340E61F1C2C6AB200020202 /* Main.storyboard */; };
 		0340E6231C2C6AB200020202 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0340E6221C2C6AB200020202 /* Assets.xcassets */; };
 		0340E6261C2C6AB200020202 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0340E6241C2C6AB200020202 /* LaunchScreen.storyboard */; };
-		0344C35B1C2D9AA7003D9E40 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0344C35A1C2D9AA7003D9E40 /* Localizable.strings */; };
+		0344C35F1C2D9B4A003D9E40 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0344C3611C2D9B4A003D9E40 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +23,7 @@
 		0340E6221C2C6AB200020202 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0340E6251C2C6AB200020202 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0340E6271C2C6AB200020202 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0344C35A1C2D9AA7003D9E40 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		0344C3601C2D9B4A003D9E40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +62,7 @@
 				0340E6221C2C6AB200020202 /* Assets.xcassets */,
 				0340E6241C2C6AB200020202 /* LaunchScreen.storyboard */,
 				0340E6271C2C6AB200020202 /* Info.plist */,
-				0344C35A1C2D9AA7003D9E40 /* Localizable.strings */,
+				0344C3611C2D9B4A003D9E40 /* Localizable.strings */,
 			);
 			path = Serengeti;
 			sourceTree = "<group>";
@@ -126,7 +126,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0340E6261C2C6AB200020202 /* LaunchScreen.storyboard in Resources */,
-				0344C35B1C2D9AA7003D9E40 /* Localizable.strings in Resources */,
+				0344C35F1C2D9B4A003D9E40 /* Localizable.strings in Resources */,
 				0340E6231C2C6AB200020202 /* Assets.xcassets in Resources */,
 				0340E6211C2C6AB200020202 /* Main.storyboard in Resources */,
 			);
@@ -161,6 +161,14 @@
 				0340E6251C2C6AB200020202 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		0344C3611C2D9B4A003D9E40 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0344C3601C2D9B4A003D9E40 /* Base */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
